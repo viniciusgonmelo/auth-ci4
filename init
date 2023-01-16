@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Download the 4.2.10 version of the framework
+
+wget -O framework.tar.gz https://github.com/codeigniter4/framework/archive/refs/tags/v4.2.10.tar.gz && tar -xf framework.tar.gz && rm framework.tar.gz && mv framework-4.2.10 framework
+
+rm -rf framework/app && mv app framework/ && mv framework/* . && rmdir framework
+
+# Create the database and the user table
+
+mysql -p < config/auth_ci4.sql 
+
+# Serve the app in dev mode
+
+php spark serve
