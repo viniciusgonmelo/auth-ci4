@@ -9,7 +9,3 @@ rm -rf framework/app && mv app framework/ && mv framework/* . && rmdir framework
 # Create the database and the user table
 
 mysql -p < config/auth_ci4.sql 
-
-# Serve the app in dev mode
-
-php spark serve
