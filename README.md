@@ -3,5 +3,5 @@ Páginas de login e cadastro feitas com o [CodeIgniter 4](https://codeigniter.co
 ## Requerimentos
 - `MySQL` (verifique as configurações do banco em `/.env`).
 ## Uso
-- `chmod +x init; ./init` para instalar o framework
+- `chmod +x init; ./init` para instalar o framework e configurar o app
 - Execute o servidor de testes com `php spark serve`
