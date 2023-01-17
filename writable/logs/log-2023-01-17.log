@@ -1,0 +1,64 @@
+ERROR - 2023-01-17 07:05:49 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect('localhost', 'root', 'root', 'auth_ci4', 3306, '', 0)
+#1 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#6 /home/vini/code/auth-ci4/app/Libraries/Auth.php(18): CodeIgniter\BaseModel->first()
+#7 /home/vini/code/auth-ci4/app/Filters/Auth.php(16): App\Libraries\Auth->authenticate()
+#8 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Filters/Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('/', 'before')
+#10 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/vini/code/auth-ci4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/home/vini/code...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/BaseModel.php(623): CodeIgniter\Model->doFirst()
+#5 /home/vini/code/auth-ci4/app/Libraries/Auth.php(18): CodeIgniter\BaseModel->first()
+#6 /home/vini/code/auth-ci4/app/Filters/Auth.php(16): App\Libraries\Auth->authenticate()
+#7 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Filters/Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#8 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('/', 'before')
+#9 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/vini/code/auth-ci4/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(46): require_once('/home/vini/code...')
+#12 {main}
+CRITICAL - 2023-01-17 07:05:49 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `session_id` = :session_id:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(623): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Libraries/Auth.php(18): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Filters/Auth.php(16): App\Libraries\Auth->authenticate()
+ 7 SYSTEMPATH/Filters/Filters.php(173): App\Filters\Auth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\Filters\Filters->run('/', 'before')
+ 9 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')
+CRITICAL - 2023-01-17 13:10:56 --> Class "Locale" not found
+in SYSTEMPATH/CodeIgniter.php on line 186.
+ 1 ROOTPATH/spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-01-17 07:13:21 --> Use of undefined constant PARTIALS_PATH - assumed 'PARTIALS_PATH' (this will throw an Error in a future version of PHP)
+in APPPATH/Views/login.php on line 7.
+ 1 APPPATH/Views/login.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant PARTIALS_PATH - assumed \'PARTIALS_PATH\' (this will throw an Error in a future version of PHP)', 'APPPATH/Views/login.php', 7, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/login.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render('login', [], true)
+ 5 APPPATH/Controllers/UserAccount.php(31): view('login', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\UserAccount->login()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserAccount))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(46): require_once('FCPATH/index.php')

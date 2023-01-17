@@ -1,8 +1,1 @@
-/*
-!/app/
-!/public/
-!/config/
-!/.env
-!/init
-!/.gitignore
-!/README.md
+/vendor/
