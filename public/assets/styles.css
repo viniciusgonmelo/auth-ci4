@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* CSS reset */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+background-color: white;
+border-bottom: 1px solid gray;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  font-size: 1em;
+}
+
+form label {
+  font-size: .9em;
+}
+
+header nav {
+  display: flex;
+gap: 1em;
+padding: 1em;
+justify-content: right;
+}
+
+header nav a {
+  color: black;
+text-decoration: none;
+font-weight: 700;
+}
+
+header nav a:hover {
+text-decoration: underline;
+}
+
+.form-container {
+  padding: 1.5em;
+  border: 1px solid gray;
+  background-color: white;
+}
+
+form section {
+  margin-top: 1em;
+}
+
+form p {
+  margin-top: .5em;
+}
+
+form section:last-of-type p:last-of-type {
+  text-align: center;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  margin-top: .2em;
+  padding: .3em;
+  outline: none;
+  border: 1px solid gray;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  outline: 1px solid gray;
+  border: 1px solid gray !important;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  background-color: crimson;
+  color: white;
+  border: none;
+  padding: .5em .3em;
+}
+
+input[type=submit]:hover {
+  background-color: #c61236;
+}
+
+.input-error {
+  border: 1px solid red !important;
+}
+
+.validation-error {
+  color: red;
+  font-size: .9em;
+}
+
+.messages-container {
+  position:absolute;
+  width:100%;
+  top:0;
+}
+
+.message {
+  margin: .5em;
+  border-radius: .2em;
+  background-color: white;
+  border: 1px solid gray;
+  min-height: 50px;
+  padding: 1em;
+}
+
+.success {
+  background-color: #DDFFDD;
+}
+
+.failure {
+  background-color: #FFDDDD;
+}
+
+@media only screen and (min-width: 600px) {
+  .form-container {
+    max-width: 66%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form-container {
+    max-width: 50%;
+  }
+}
