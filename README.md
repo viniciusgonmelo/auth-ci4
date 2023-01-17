@@ -5,3 +5,5 @@ Páginas de login e cadastro feitas com o [CodeIgniter 4](https://codeigniter.co
 ## Uso
 - `chmod +x init; ./init` para instalar o framework e configurar o app
 - Execute o servidor de testes com `php spark serve`
+## Screenshots
+![Screenshot_2023-01-17_02-22-22](https://user-images.githubusercontent.com/97701096/212818417-ae8358f1-98d2-4447-a2d4-78a0b5693d46.png)
