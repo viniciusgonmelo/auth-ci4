@@ -5,42 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title><?= $page_title ?></title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-</head>
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css" media="all">
 
 <body>
   <?php if (isset($_SESSION['messages'])) : ?>
-    <div id="messages" style="position:absolute;width:100%;top:0;">
+    <div id="messages" class='messages-container'>
       <?php foreach ($_SESSION['messages'] as $message) : ?>
         <?php if ($message['type'] == 'error') : ?>
-          <div class="alert alert-danger">
-            <?= $message['content'] ?>
+          <div class='message failure'>
+            <span><?= $message['content'] ?></span>
           </div>
         <?php elseif ($message['type'] = 'success') : ?>
-          <div class="alert alert-success">
-            <?= $message['content'] ?>
+          <div class='message success'>
+            <span><?= $message['content'] ?></span>
           </div>
         <?php endif ?>
       <?php endforeach ?>
     </div>
   <?php endif ?>
   <?= $this->renderSection('content') ?>
-  <script>
-    const messages = document.getElementById('messages');
-    if (messages) {
-      setTimeout(() => {
-        messages.remove()
-      }, 5000);
-    }
-    const invalid_fields = document.querySelectorAll('.is-invalid');
-    if (invalid_fields) {
-      setTimeout(() => {
-        document.querySelectorAll('.invalid-feedback').forEach((div) => {
-          div.remove();
-        });
-      }, 5000);
-    }
-  </script>
+  <script src='/assets/main.js'></script>
 </body>
 
 </html>

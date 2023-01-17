@@ -36,7 +36,7 @@ class Auth
     $password = $data['password'];
     if ($user_model->user_exists($username)) {
       $user = $user_model->where('username', $username)->first() ?? $user_model->where('email', $username)->first();
-      if (!password_verify($password, $user->password)) return 0;
+      if (!password_verify($password, $user->password)) return null;
       $user->session_id = session_id();
       $user_model->save($user);
       return $user;

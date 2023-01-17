@@ -4,10 +4,18 @@ echo $this->section('content');
 helper('get_greeting');
 $greeting = get_greeting();
 ?>
-<nav class="navbar navbar-expand-md" style="border-bottom: 1px black solid;">
-  <div class="container-fluid">
+
+<header>
+  <nav>
     <span><?= ucfirst($greeting) ?>, <?= esc($user['name']) ?></span>
-    <a class="nav-link" href="<?= base_url('/logout') ?>" style="text-decoration: underline;">Sair</a>
-  </div>
-</nav>
+    <ul>
+      <li>
+        <a href="<?= base_url('/logout') ?>">
+          Sair
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
 <?= $this->endSection() ?>
