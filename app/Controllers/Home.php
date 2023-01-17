@@ -20,6 +20,6 @@ class Home extends BaseController
 
   public function index()
   {
-    if ($_SERVER['REQUEST_METHOD'] == 'GET') return view('home', ['page_title' => 'Home page', 'user' => $this->user->toArray()]);
+    if ($_SERVER['REQUEST_METHOD'] == 'GET') return view('home', ['page_title' => 'Home', 'user' => $this->user->toArray()]);
   }
 }
