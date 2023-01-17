@@ -24,7 +24,7 @@ class UserAccount extends BaseController
 
   public function login()
   {
-    $data['page_title'] = 'Login Page';
+    $data['page_title'] = 'Login';
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $user = $this->auth->authenticate();
       if ($user) return redirect()->to('/');
@@ -48,7 +48,7 @@ class UserAccount extends BaseController
   public function registration()
   {
     $user_model = new UserModel();
-    $data['page_title'] = 'Registration Page';
+    $data['page_title'] = 'Cadastro';
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $user = $this->auth->authenticate();
       if ($user) return redirect()->to('/');
