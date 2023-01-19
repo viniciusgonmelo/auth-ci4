@@ -6,4 +6,3 @@ Páginas de login e cadastro feitas com o [CodeIgniter 4](https://codeigniter.co
 - Configure o `MySQL` em `/env` e renomeie o arquivo para '/.env'
 - `composer install && composer start` (`composer start` cria o banco e a tabela de usuários)
 ##
-![Peek 2023-01-17 04-09](https://user-images.githubusercontent.com/97701096/212832844-0b39857f-2c71-4d1a-b760-2f0c4dabc8fe.gif)
