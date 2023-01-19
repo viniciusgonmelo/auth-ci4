@@ -27,7 +27,7 @@ class UserAccount extends BaseController
     $data['page_title'] = 'Login';
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $user = $this->auth->authenticate();
-      if ($user) return redirect()->to('/');
+      if ($user) return redirect()->to(base_url('/'));
       return view('login', $data);
     } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
       if ($this->my_validator->validate_form($_POST, 'login')) return redirect()->back()->withInput();
@@ -51,7 +51,7 @@ class UserAccount extends BaseController
     $data['page_title'] = 'Cadastro';
     if ($_SERVER['REQUEST_METHOD'] == 'GET') {
       $user = $this->auth->authenticate();
-      if ($user) return redirect()->to('/');
+      if ($user) return redirect()->to(base_url('/'));
       return view('registration', $data);
     } elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
       if ($this->my_validator->validate_form($_POST, 'registration')) return redirect()->back()->withInput();
@@ -61,7 +61,7 @@ class UserAccount extends BaseController
         }
       } else {
         $this->messenger->set_message('success', 'Usuário criado com sucesso.');
-        return redirect()->to('/login');
+        return redirect()->to(base_url('/login'));
       }
       return redirect()->back();
     }

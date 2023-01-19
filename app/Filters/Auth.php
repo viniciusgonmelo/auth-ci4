@@ -13,7 +13,7 @@ class Auth implements FilterInterface
   public function before(RequestInterface $request, $arguments = null)
   {
     $session = \Config\Services::session();
-    if (!(new \App\Libraries\Auth(UserModel::class))->authenticate()) return redirect()->to('/login');;
+    if (!(new \App\Libraries\Auth(UserModel::class))->authenticate()) return redirect()->to(base_url('/login'));;
   }
 
   public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
