@@ -24,7 +24,9 @@ class App extends BaseConfig
    *
    * @var string
    */
-  public $baseURL = 'http://localhost:8080/';
+
+  # BASE_URL defined in /app/Config/Constants.php, because could not set port to env var here...
+  public $baseURL = BASE_URL;
 
   /**
    * --------------------------------------------------------------------------

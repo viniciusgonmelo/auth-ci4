@@ -4,6 +4,7 @@ Páginas de login e cadastro feitas com o [CodeIgniter 4](https://codeigniter.co
 - `MySQL` (verifique as configurações em `/env`).
 ## Uso
 - Configure o `MySQL` em `/env` e renomeie o arquivo para '/.env'
+- A porta usada pelo Spark pode ser configurada em '/config/ports' (o padrão é uma porta alta aleatória gerada pelo script).
 - `composer install && composer start` (`composer start` cria o banco e a tabela de usuários)
 ##
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/97701096/213434921-6fc6f89a-de55-418b-a121-fd8c7f749a84.gif)

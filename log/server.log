@@ -1,0 +1,179 @@
+
+CodeIgniter v4.2.10 Command Line Tool - Server Time: 2023-01-19 22:05:43 UTC-06:00
+
+CodeIgniter development server started on http://localhost:29815
+Press Control-C to stop.
+[Fri Jan 20 01:05:43 2023] PHP 7.4.29 Development Server (http://localhost:29815) started
+[Fri Jan 20 01:05:49 2023] [::1]:59146 Accepted
+[Fri Jan 20 01:05:49 2023] [::1]:59146 Closing
+[Fri Jan 20 01:05:49 2023] [::1]:59148 Accepted
+
+CodeIgniter v4.2.10 Command Line Tool - Server Time: 2023-01-19 22:06:29 UTC-06:00
+
+CodeIgniter development server started on http://localhost:18340
+Press Control-C to stop.
+[Fri Jan 20 01:06:29 2023] PHP 7.4.29 Development Server (http://localhost:18340) started
+[Fri Jan 20 01:06:32 2023] [::1]:41304 Accepted
+[Fri Jan 20 01:06:32 2023] [::1]:41304 Closing
+[Fri Jan 20 01:06:32 2023] [::1]:41312 Accepted
+PHP Fatal error:  Constant expression contains invalid operations in /home/vini/code/auth-ci4/app/Config/App.php on line 27
+
+Fatal error: Constant expression contains invalid operations in /home/vini/code/auth-ci4/app/Config/App.php on line 27
+
+CodeIgniter v4.2.10 Command Line Tool - Server Time: 2023-01-19 22:13:55 UTC-06:00
+
+CodeIgniter development server started on http://localhost:11518
+Press Control-C to stop.
+[Fri Jan 20 01:13:55 2023] PHP 7.4.29 Development Server (http://localhost:11518) started
+[Fri Jan 20 01:13:59 2023] [::1]:54022 Accepted
+[Fri Jan 20 01:13:59 2023] [::1]:54022 Closing
+[Fri Jan 20 01:13:59 2023] [::1]:54026 Accepted
+[Fri Jan 20 01:14:03 2023] [::1]:54026 Closing
+[Fri Jan 20 01:14:03 2023] [::1]:54042 Accepted
+
+CodeIgniter v4.2.10 Command Line Tool - Server Time: 2023-01-19 22:14:57 UTC-06:00
+
+CodeIgniter development server started on http://localhost:50109
+Press Control-C to stop.
+[Fri Jan 20 01:14:57 2023] PHP 7.4.29 Development Server (http://localhost:50109) started
+[Fri Jan 20 01:15:00 2023] [::1]:57822 Accepted
+[Fri Jan 20 01:15:00 2023] [::1]:57822 Closing
+[Fri Jan 20 01:15:00 2023] [::1]:57824 Accepted
+[Fri Jan 20 01:15:01 2023] [::1]:57824 [200]: GET /favicon.ico
+[Fri Jan 20 01:15:01 2023] [::1]:57824 Closing
+
+CodeIgniter v4.2.10 Command Line Tool - Server Time: 2023-01-19 22:16:19 UTC-06:00
+
+CodeIgniter development server started on http://localhost:19771
+Press Control-C to stop.
+[Fri Jan 20 01:16:20 2023] PHP 7.4.29 Development Server (http://localhost:19771) started
+[Fri Jan 20 01:16:23 2023] [::1]:59112 Accepted
+[Fri Jan 20 01:16:23 2023] [::1]:59112 Closing
+[Fri Jan 20 01:16:23 2023] [::1]:59116 Accepted
+PHP Fatal error:  Uncaught TypeError: Argument 2 passed to CodeIgniter\HTTP\IncomingRequest::detectURI() must be of the type string, null given, called in /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 170 and defined in /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php:196
+Stack trace:
+#0 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php(170): CodeIgniter\HTTP\IncomingRequest->detectURI('PATH_INFO', NULL)
+#1 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Config/Services.php(541): CodeIgniter\HTTP\IncomingRequest->__construct(Object(Config\App), Object(CodeIgniter\HTTP\URI), '', Object(CodeIgniter\HTTP\UserAgent))
+#2 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Config/Services.php(497): CodeIgniter\Config\Services::incomingrequest(Object(Config\App), false)
+#3 /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/Config/BaseService.php(253): CodeIgniter\Config\Service in /home/vini/code/auth-ci4/vendor/codeigniter4/framework/system/HTTP/IncomingRequest.php on line 196
+
+CodeIgniter v4.2.10 Command Line Tool - Server Time: 2023-01-19 22:23:56 UTC-06:00
+
+CodeIgniter development server started on http://localhost:31489
+Press Control-C to stop.
+[Fri Jan 20 01:23:56 2023] PHP 7.4.29 Development Server (http://localhost:31489) started
+[Fri Jan 20 01:24:00 2023] [::1]:38294 Accepted
+[Fri Jan 20 01:24:00 2023] [::1]:38294 Closing
+[Fri Jan 20 01:24:00 2023] [::1]:38306 Accepted
+[Fri Jan 20 01:24:00 2023] [::1]:38306 Closing
+[Fri Jan 20 01:24:00 2023] [::1]:38316 Accepted
+[Fri Jan 20 01:24:00 2023] [::1]:38322 Accepted
+[Fri Jan 20 01:24:00 2023] [::1]:38316 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:00 2023] [::1]:38322 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:00 2023] [::1]:38316 Closing
+[Fri Jan 20 01:24:00 2023] [::1]:38322 Closing
+[Fri Jan 20 01:24:01 2023] [::1]:38336 Accepted
+[Fri Jan 20 01:24:01 2023] [::1]:38336 [200]: GET /favicon.ico
+[Fri Jan 20 01:24:01 2023] [::1]:38336 Closing
+[Fri Jan 20 01:24:03 2023] [::1]:38344 Accepted
+[Fri Jan 20 01:24:03 2023] [::1]:38348 Accepted
+[Fri Jan 20 01:24:03 2023] [::1]:38344 Closing
+[Fri Jan 20 01:24:03 2023] [::1]:38348 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:03 2023] [::1]:38348 Closing
+[Fri Jan 20 01:24:03 2023] [::1]:38350 Accepted
+[Fri Jan 20 01:24:03 2023] [::1]:38350 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:03 2023] [::1]:38350 Closing
+[Fri Jan 20 01:24:05 2023] [::1]:38354 Accepted
+[Fri Jan 20 01:24:05 2023] [::1]:38368 Accepted
+[Fri Jan 20 01:24:05 2023] [::1]:38354 Closing
+[Fri Jan 20 01:24:05 2023] [::1]:38368 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:05 2023] [::1]:38368 Closing
+[Fri Jan 20 01:24:05 2023] [::1]:38374 Accepted
+[Fri Jan 20 01:24:05 2023] [::1]:38374 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:05 2023] [::1]:38374 Closing
+[Fri Jan 20 01:24:07 2023] [::1]:38388 Accepted
+[Fri Jan 20 01:24:07 2023] [::1]:38396 Accepted
+[Fri Jan 20 01:24:07 2023] [::1]:38388 Closing
+[Fri Jan 20 01:24:07 2023] [::1]:38396 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:07 2023] [::1]:38396 Closing
+[Fri Jan 20 01:24:07 2023] [::1]:38404 Accepted
+[Fri Jan 20 01:24:07 2023] [::1]:38404 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:07 2023] [::1]:38404 Closing
+[Fri Jan 20 01:24:19 2023] [::1]:41476 Accepted
+[Fri Jan 20 01:24:19 2023] [::1]:41480 Accepted
+[Fri Jan 20 01:24:19 2023] [::1]:41476 Closing
+[Fri Jan 20 01:24:19 2023] [::1]:41480 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:19 2023] [::1]:41480 Closing
+[Fri Jan 20 01:24:19 2023] [::1]:41482 Accepted
+[Fri Jan 20 01:24:19 2023] [::1]:41482 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:19 2023] [::1]:41482 Closing
+[Fri Jan 20 01:24:24 2023] [::1]:41492 Accepted
+[Fri Jan 20 01:24:24 2023] [::1]:41494 Accepted
+[Fri Jan 20 01:24:24 2023] [::1]:41492 Closing
+[Fri Jan 20 01:24:24 2023] [::1]:41494 Closing
+[Fri Jan 20 01:24:24 2023] [::1]:41504 Accepted
+[Fri Jan 20 01:24:24 2023] [::1]:41504 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:24 2023] [::1]:41504 Closing
+[Fri Jan 20 01:24:24 2023] [::1]:41506 Accepted
+[Fri Jan 20 01:24:24 2023] [::1]:41506 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:24 2023] [::1]:41506 Closing
+[Fri Jan 20 01:24:44 2023] [::1]:43110 Accepted
+[Fri Jan 20 01:24:44 2023] [::1]:43120 Accepted
+[Fri Jan 20 01:24:44 2023] [::1]:43110 Closing
+[Fri Jan 20 01:24:44 2023] [::1]:43120 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:44 2023] [::1]:43120 Closing
+[Fri Jan 20 01:24:44 2023] [::1]:43132 Accepted
+[Fri Jan 20 01:24:44 2023] [::1]:43132 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:44 2023] [::1]:43132 Closing
+[Fri Jan 20 01:24:46 2023] [::1]:43136 Accepted
+[Fri Jan 20 01:24:46 2023] [::1]:43152 Accepted
+[Fri Jan 20 01:24:46 2023] [::1]:43136 Closing
+[Fri Jan 20 01:24:46 2023] [::1]:43152 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:46 2023] [::1]:43152 Closing
+[Fri Jan 20 01:24:46 2023] [::1]:43156 Accepted
+[Fri Jan 20 01:24:46 2023] [::1]:43156 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:46 2023] [::1]:43156 Closing
+[Fri Jan 20 01:24:49 2023] [::1]:58250 Accepted
+[Fri Jan 20 01:24:49 2023] [::1]:58260 Accepted
+[Fri Jan 20 01:24:49 2023] [::1]:58250 Closing
+[Fri Jan 20 01:24:49 2023] [::1]:58260 Closing
+[Fri Jan 20 01:24:49 2023] [::1]:58276 Accepted
+[Fri Jan 20 01:24:49 2023] [::1]:58276 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:49 2023] [::1]:58276 Closing
+[Fri Jan 20 01:24:49 2023] [::1]:58278 Accepted
+[Fri Jan 20 01:24:49 2023] [::1]:58278 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:49 2023] [::1]:58278 Closing
+[Fri Jan 20 01:24:52 2023] [::1]:58286 Accepted
+[Fri Jan 20 01:24:52 2023] [::1]:58296 Accepted
+[Fri Jan 20 01:24:52 2023] [::1]:58286 Closing
+[Fri Jan 20 01:24:52 2023] [::1]:58296 Closing
+[Fri Jan 20 01:24:52 2023] [::1]:58312 Accepted
+[Fri Jan 20 01:24:52 2023] [::1]:58312 [200]: GET /assets/styles.css
+[Fri Jan 20 01:24:52 2023] [::1]:58312 Closing
+[Fri Jan 20 01:24:52 2023] [::1]:58328 Accepted
+[Fri Jan 20 01:24:52 2023] [::1]:58328 [200]: GET /assets/main.js
+[Fri Jan 20 01:24:52 2023] [::1]:58328 Closing
+[Fri Jan 20 01:24:59 2023] [::1]:60532 Accepted
+[Fri Jan 20 01:24:59 2023] [::1]:60548 Accepted
+[Fri Jan 20 01:24:59 2023] [::1]:60532 Closing
+[Fri Jan 20 01:25:00 2023] [::1]:60548 Closing
+[Fri Jan 20 01:25:00 2023] [::1]:60556 Accepted
+[Fri Jan 20 01:25:00 2023] [::1]:60556 Closing
+[Fri Jan 20 01:25:00 2023] [::1]:60564 Accepted
+[Fri Jan 20 01:25:00 2023] [::1]:60564 [200]: GET /assets/styles.css
+[Fri Jan 20 01:25:00 2023] [::1]:60564 Closing
+[Fri Jan 20 01:25:00 2023] [::1]:60572 Accepted
+[Fri Jan 20 01:25:00 2023] [::1]:60572 [200]: GET /assets/main.js
+[Fri Jan 20 01:25:00 2023] [::1]:60572 Closing
+[Fri Jan 20 01:25:04 2023] [::1]:60578 Accepted
+[Fri Jan 20 01:25:04 2023] [::1]:60588 Accepted
+[Fri Jan 20 01:25:04 2023] [::1]:60578 Closing
+[Fri Jan 20 01:25:04 2023] [::1]:60588 Closing
+[Fri Jan 20 01:25:04 2023] [::1]:60604 Accepted
+[Fri Jan 20 01:25:04 2023] [::1]:60604 Closing
+[Fri Jan 20 01:25:04 2023] [::1]:60610 Accepted
+[Fri Jan 20 01:25:04 2023] [::1]:60610 [200]: GET /assets/styles.css
+[Fri Jan 20 01:25:04 2023] [::1]:60610 Closing
+[Fri Jan 20 01:25:04 2023] [::1]:60614 Accepted
+[Fri Jan 20 01:25:04 2023] [::1]:60614 [200]: GET /assets/main.js
+[Fri Jan 20 01:25:04 2023] [::1]:60614 Closing

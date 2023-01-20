@@ -27,7 +27,7 @@
     }
   },
   "scripts": {
-    "start": "mysql -p < config/auth_ci4.sql; php spark serve"
+    "start": "chmod +x init.sh; ./init.sh"
   },
   "support": {
     "forum": "http://forum.codeigniter.com/",
