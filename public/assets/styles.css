@@ -21,12 +21,15 @@ legend {
   font-size: 1.5em;
 }
 
-.form-container {
-  min-width: 350px;
+.container {
   padding: 2em;
   border: 1px solid lightgray;
+    background-color: white;
+}
+
+.container.form {
+  min-width: 350px;
   border-radius: .2em;
-  background-color: white;
 }
 
 input[type=submit]{
@@ -83,6 +86,6 @@ input[type=text],input[type=password],input[type=email] {
 
 .pure-menu-link {
   display: inline-flex;
-align-items: center;
-    min-height: 3em;
+  align-items: center;
+  min-height: 3em;
 }

@@ -1,4 +1,4 @@
-  <section class="form-container pure-u-1 pure-u-sm-1-2 pure-u-md-14 pure-u-lg-1-5">
+  <section class="container form pure-u-1 pure-u-sm-1-2 pure-u-md-1-4 pure-u-lg-1-5">
     <form class="pure-form pure-form-stacked" action="/cadastro" method="post" novalidate>
       <?= csrf_field() ?>
       <fieldset>
