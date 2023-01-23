@@ -7,4 +7,4 @@ Páginas de login e cadastro feitas com o [CodeIgniter 4](https://codeigniter.co
 - A porta usada pelo Spark pode ser configurada em '/config/ports' (o padrão é uma porta alta aleatória gerada por '/config/ports').
 - `composer install && composer start` (`composer start` cria o banco e a tabela de usuários)
 ##
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/97701096/213620253-084cc93c-33a1-48bb-b5b9-e42a5b9405ed.gif)
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/97701096/214077592-05b6f48f-f53a-4541-8fdf-24ddaf819909.gif)
